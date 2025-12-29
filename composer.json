@@ -1,8 +1,9 @@
 {
-	"name": "genisyspro/GenisysPro",
+	"name": "genisyspro/genisyspro",
 	"type": "project",
     "require": {
         "phpunit/phpunit": "6.2"
 	}
 }	
+
 
