@@ -1,0 +1,16 @@
+{
+    "name": "xinyue/genisys-pro",
+    "version": "1.1.0",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": ["src"]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "make-server": "@php -dphar.readonly=0 build/box.phar compile"
+    }
+}
