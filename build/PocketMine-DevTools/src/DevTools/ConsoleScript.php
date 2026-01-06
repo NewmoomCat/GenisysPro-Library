@@ -90,6 +90,12 @@ foreach(new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($folderPa
 	}
 	echo "\r[" . (++$count) . "] " . str_pad($path, $maxLen, " ");
 }
+foreach($phar as $file => $finfo){
+	/** @var \PharFileInfo $finfo */
+	if($finfo->getSize() > (1024 * 512)){
+		$finfo->compress(\Phar::GZ);
+	}
+}
 
 $phar->stopBuffering();
 
