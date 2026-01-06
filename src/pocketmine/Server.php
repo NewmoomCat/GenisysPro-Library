@@ -374,19 +374,19 @@ class Server{
 		return (\pocketmine\VERSION !== ""? $prefix . \pocketmine\VERSION : "");
 	}
 
-	/**
-		* @return string
-		*/
-	public function getGitCommit(){
+	/*
+	 * eturn string
+	 */
+	/*public function getGitCommit(){
 		return \pocketmine\GIT_COMMIT;
-	}
+	}*/
 
-	/**
-		* @return string
-		*/
-	public function getShortGitCommit(){
+	/*
+	 * return string
+	 */
+	/*public function getShortGitCommit(){
 		return substr(\pocketmine\GIT_COMMIT, 0, 7);
-	}
+	}*/
 
 	/**
 	 * @return string
@@ -1520,29 +1520,20 @@ class Server{
 		}, $microseconds);
 	}
 
-	public function about(){
-	 $version = implode(",",ProtocolInfo::MINECRAFT_VERSION);
+	public function about()
+	{
+
 		$string = "
-
-  _____            _               _____
- / ____|          (_)             |  __ \
-| |  __  ___ _ __  _ ___ _   _ ___| |__) | __ ___
-| | |_ |/ _ \ '_ \| / __| | | / __|  ___/ '__/ _ \
-| |__| |  __/ | | | \__ \ |_| \__ \ |   | | | (_) |
- \_____|\___|_| |_|_|___/\__, |___/_|   |_|  \___/
-                          __/ |
-                         |___/
-
-	Version: §6" . $this->getPocketMineVersion() . ' (' . $this->getShortGitCommit() . ')§f
-	Client Version: §b' . $version . '§f
-	PHP Version: §e' . PHP_VERSION . '§f
-	OS: §6' . PHP_OS .'§f
-	This core is maintained by §dGenisysPro§f (https://github.com/GenisysPro)
-	Discord Group chat: §ehttps://discord.gg/WrKzRNn §f
-	Chatroom on QQ: §a559301590 §f
-	Welcome to donate us on QQ: §c1912003473
-	';
-
+		
+		=========== §bBLUE §7ARCHIVE §fSERVER ===========
+		                               
+		 CODENAME: §b". $this->getCodename() ."§f
+		 VERSION: §b". $this->getPocketMineVersion()."§f API VERSION: §b".$this->getApiVersion()."§f
+		 PHP VERSION: §b". PHP_VERSION ."§f OS VERSION: §b". PHP_OS ."§f
+		 MINECRAFT VERSION: §bv".ProtocolInfo::MINECRAFT_VERSION_NETWORK."§f PROTOCOL: §b".ProtocolInfo::CURRENT_PROTOCOL."§f
+		                                      
+		===========================================
+		";
 		$this->getLogger()->info($string);
 	}
 
@@ -1675,6 +1666,7 @@ class Server{
 			$this->version = $version;
 
 			$this->about();
+
 
 			$this->logger->info("Loading properties and configuration...");
 			if(!file_exists($this->dataPath . "pocketmine.yml")){

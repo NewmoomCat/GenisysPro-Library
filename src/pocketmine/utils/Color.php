@@ -25,7 +25,7 @@
 
 namespace pocketmine\utils;
 
-class Color {
+final class Color {
 
 	const COLOR_DYE_BLACK = 0;//dye colors
 	const COLOR_DYE_RED = 1;

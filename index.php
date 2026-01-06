@@ -1,1 +1,0 @@
-<?php define("pocketmine\\PATH", "phar://".__FILE__."/"); require_once("phar://".__FILE__."/src/pocketmine/PocketMine.php"); __HALT_COMPILER();?>

@@ -11,6 +11,6 @@
         "sort-packages": true
     },
     "scripts": {
-        "make-server": "@php -dphar.readonly=0 build/box.phar compile"
+        "make-server": "@php -dphar.readonly=0 build/DevTools.phar --make ./src --relative ./ --entry src/pocketmine/PocketMine.php --out GenisysPro.phar"
     }
 }

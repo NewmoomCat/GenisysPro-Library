@@ -258,6 +258,14 @@ class Binary {
 			return unpack("V", $str)[1];
 		}
 	}
+	/**
+	 * @param $value
+	 *
+	 * @return int
+	 */
+	public static function signInt($value) {
+		return $value << 32 >> 32;
+	}
 
 	/**
 	 * @param $value

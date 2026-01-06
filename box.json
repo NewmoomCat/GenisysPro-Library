@@ -1,8 +1,0 @@
-{
-    "base-path": "./",
-    "output": "target/GenisysPro.phar",
-    "stub": "./index.php",
-    "compression": "NONE",
-    "directories": ["src"],
-    "exclude-composer-files": false
-}
