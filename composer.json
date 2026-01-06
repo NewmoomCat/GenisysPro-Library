@@ -11,6 +11,7 @@
         "sort-packages": true
     },
     "scripts": {
+        "make-DevTools": "@php -dphar.readonly=0 build/PocketMine-DevTools/src/DevTools/ConsoleScript.php --make build/PocketMine-DevTools/ --entry build/PocketMine-DevTools/src/DevTools/ConsoleScript.php --out DevTools.phar",
         "make-server": "@php -dphar.readonly=0 build/PocketMine-DevTools/src/DevTools/ConsoleScript.php --make ./src --relative ./ --entry src/pocketmine/PocketMine.php --out GenisysPro.phar"
     }
 }
