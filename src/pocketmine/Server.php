@@ -374,20 +374,6 @@ class Server{
 		return (\pocketmine\VERSION !== ""? $prefix . \pocketmine\VERSION : "");
 	}
 
-	/*
-	 * eturn string
-	 */
-	/*public function getGitCommit(){
-		return \pocketmine\GIT_COMMIT;
-	}*/
-
-	/*
-	 * return string
-	 */
-	/*public function getShortGitCommit(){
-		return substr(\pocketmine\GIT_COMMIT, 0, 7);
-	}*/
-
 	/**
 	 * @return string
 	 */
@@ -410,13 +396,6 @@ class Server{
 		return \pocketmine\API_VERSION;
 	}
 
-
-	/**
-	 * @return string
-	 */
-	public function getiTXApiVersion(){
-		return \pocketmine\GENISYS_API_VERSION;
-	}
 
 	/**
 	 * @return string
@@ -1616,14 +1595,6 @@ class Server{
 
 	public function updateDServerInfo(){
 		$this->scheduler->scheduleAsyncTask(new DServerTask($this->dserverConfig["serverList"], $this->dserverConfig["retryTimes"]));
-	}
-
-	public function getBuild(){
-		return $this->version->getBuild();
-	}
-
-	public function getGameVersion(){
-		return $this->version->getRelease();
 	}
 
 	/**
