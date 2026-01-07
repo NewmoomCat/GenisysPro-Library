@@ -1,4 +1,1 @@
-<?php
-
-require("src/DevTools/ConsoleScript.php");
-__HALT_COMPILER();
+<?php require("src/DevTools/ConsoleScript.php"); __HALT_COMPILER();
