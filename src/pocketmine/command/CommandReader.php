@@ -24,6 +24,7 @@ declare(strict_types=1);
 namespace pocketmine\command;
 
 use pocketmine\Thread;
+use Traversable;
 
 
 class CommandReader extends Thread {
@@ -191,5 +192,10 @@ class CommandReader extends Thread {
 	 */
 	public function getThreadName(){
 		return "Console";
+	}
+
+	public function getIterator()
+	{
+		// TODO: Implement getIterator() method.
 	}
 }

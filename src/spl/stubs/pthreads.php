@@ -83,7 +83,7 @@ class Volatile extends Threaded{
  * @link  http://www.php.net/manual/en/class.threaded.php
  * @since 2.0.0
  */
-class Threaded implements Traversable, Collectable{
+class Threaded implements IteratorAggregate, Collectable{
 
 	/**
 	 * @param object $obj

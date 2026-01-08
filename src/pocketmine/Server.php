@@ -1504,14 +1504,14 @@ class Server{
 
 		$string = "
 		
-		=========== §bBLUE §7ARCHIVE §fSERVER ===========
-		                               
-		 CODENAME: §b". $this->getCodename() ."§f
-		 VERSION: §b". $this->getPocketMineVersion()."§f API VERSION: §b".$this->getApiVersion()."§f
-		 PHP VERSION: §b". PHP_VERSION ."§f OS VERSION: §b". PHP_OS ."§f
-		 MINECRAFT VERSION: §bv".ProtocolInfo::MINECRAFT_VERSION_NETWORK."§f PROTOCOL: §b".ProtocolInfo::CURRENT_PROTOCOL."§f
+	=========== §bBLUE §7ARCHIVE §fSERVER ===========
+	                               
+	 CODENAME: §b". $this->getCodename() ."§f
+	 VERSION: §b". $this->getPocketMineVersion()."§f API VERSION: §b".$this->getApiVersion()."§f
+	 PHP VERSION: §b". PHP_VERSION ."§f OS VERSION: §b". PHP_OS ."§f
+	 MINECRAFT VERSION: §bv".ProtocolInfo::MINECRAFT_VERSION_NETWORK."§f PROTOCOL: §b".ProtocolInfo::CURRENT_PROTOCOL."§f
 		                                      
-		===========================================
+	===========================================
 		";
 		$this->getLogger()->info($string);
 	}
