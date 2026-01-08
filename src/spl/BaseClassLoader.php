@@ -165,8 +165,8 @@ class BaseClassLoader extends \Threaded implements ClassLoader{
 		return null;
 	}
 
-	public function getIterator()
+	/*public function getIterator()
 	{
 		// TODO: Implement getIterator() method.
-	}
+	}*/
 }

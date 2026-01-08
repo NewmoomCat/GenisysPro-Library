@@ -105,8 +105,8 @@ class SplFixedByteArray extends SplFixedArray{
 		return $this->toString();
 	}
 
-	public function jsonSerialize()
+	/*public function jsonSerialize()
 	{
 		// TODO: Implement jsonSerialize() method.
-	}
+	}*/
 }
